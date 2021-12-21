@@ -1,0 +1,12 @@
+body{
+    display: flex;
+
+}
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+}
