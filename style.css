@@ -1,5 +1,7 @@
 :root{
     --dark: #0323A8;
+    --large-font: large;
+    --light-green: #90EE90;
 }
 
 body{
@@ -12,8 +14,9 @@ header{
     justify-content: space-between;
     background-color: grey;
     color: aliceblue;
-    padding: 1%;
+    padding: 2%;
 }
+
 
 nav ul{
     display: flex;
@@ -40,4 +43,12 @@ nav a:hover {
     );
     width: 100%;
     color: white;
+    padding: 30px;
+}
+
+#sub-title-heading{
+    display: flex;
+    justify-content: right;
+    font-size: var(--large-font);
+    background: var(--light-green)
 }
