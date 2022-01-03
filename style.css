@@ -1,12 +1,23 @@
 body{
     display: flex;
-
+    flex-direction: column;
 }
 header{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    color: aliceblue;
+    padding: 1%;
 }
 
-nav{
+nav ul{
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
+    min-width: 300px;
+    padding: 1%;
+}
+
+nav a{
+    color: inherit;
 }
