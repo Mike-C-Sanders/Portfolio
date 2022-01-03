@@ -17,6 +17,10 @@ header{
     padding: 2%;
 }
 
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 nav ul{
     display: flex;
@@ -31,6 +35,10 @@ nav a{
 
 nav a:hover {
     color: var(--dark);
+}
+
+section{
+    display: flex;
 }
 
 .sub-title{
@@ -50,5 +58,16 @@ nav a:hover {
     display: flex;
     justify-content: right;
     font-size: var(--large-font);
-    background: var(--light-green)
+    background: var(--light-green);
+    padding: 5px;
+}
+
+article{
+    display: flex;
+    border: black solid 5px;
+}
+
+.card{
+    flex: 1 0 0;
+    padding: 10px;
 }
