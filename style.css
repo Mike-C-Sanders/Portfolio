@@ -39,8 +39,14 @@ nav a:hover {
 
 section{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+h2{
+    font-size: x-large;
+    padding: 1%;
+}
 .sub-title{
     background: repeating-linear-gradient(
         45deg,
@@ -52,22 +58,29 @@ section{
     width: 100%;
     color: white;
     padding: 30px;
+    justify-content: right;
 }
 
 #sub-title-heading{
-    display: flex;
-    justify-content: right;
     font-size: var(--large-font);
     background: var(--light-green);
     padding: 5px;
 }
 
-article{
-    display: flex;
-    border: black solid 5px;
+.about-me{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1%;
+    
+    
 }
 
-.card{
-    flex: 1 0 0;
+#about-me-title{
     padding: 10px;
+    background-color: cornflowerblue;
+}
+#about-me-text{
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: lightcyan;
 }
