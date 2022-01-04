@@ -10,18 +10,21 @@
     </head>
     <body>
         <header>
+            <figure class="my-photo-container">
+                <img  id="my-photo-image" src="./myphoto.jpg" alt="Photo of Mike">
+            </figure>
             <h1>My Portfolio</h1>
             <!-- Image of Me Goes Here -->
             <nav>
                 <ul>                   
                     <li> 
-                        <a href="#about">About Me</a> 
+                        <a href="#about-me-title">About Me</a> 
                     </li>
                     <li>
-                        <a href="#work"> Work</a>
+                        <a href="#my-work-title"> Work</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact Me</a>
+                        <a href="#contact-me-title">Contact Me</a>
                     </li>
                     <li> <a href ="">Resume</a>
                     </li>
@@ -32,8 +35,10 @@
             <!-- Sub Title Heading to break up the header from the main -->
             <section class="sub-title">
                 <!-- Will likely add a cool quote  -->
-                <h2 id="sub-title-heading">Some Cool Subtitle</h2>
+                <h2 id="sub-title-heading">May the force be with you!</h2>
             </section>
+
+            <!-- About me section -->
             <section class="about-me">
                 <h2 id = "about-me-title">About Me</h2>
                 <article id = "about-me-text">
@@ -42,29 +47,40 @@
                 </article>
             </section>
             <br>
+            <!-- My work section displaying my different projects -->
             <section class="my-work">
-                <h2 id="work">Work</h2>
-                <article class="card">
-                    <img src="https://www.fillmurray.com/200/300" alt="placeholder 1">
+                <h2 id="my-work-title">Work</h2>
 
-                </article>
-                <article class="card">
-                    <img src="https://www.fillmurray.com/200/300" alt="placeholder 2">
+                <article id ="my-work-images">
 
-                </article>
-                <article class="card">
-                    <img src="https://www.fillmurray.com/200/300" alt="placeholder 3">
-                </article>
-                <article class="card">
-                    <img src="https://www.fillmurray.com/200/300" alt="placeholder 4">
-                </article>
-                <article class="card">
-                    <img src="https://www.fillmurray.com/200/300" alt="placeholder 5">
-
+                    <figure class="card">
+                        <h3>E-Comerce Site</h3>
+                        <img src="https://www.fillmurray.com/200/300" alt="e-commerce site photo">
+    
+                    </figure>
+                    <figure class="card">
+                        <h3>Password Generator</h3>
+                        <img src="https://www.fillmurray.com/200/300" alt="password generator">
+    
+                    </figure>
+                    <figure class="card">
+                        <h3>Day Planner</h3>
+                        <img src="https://www.fillmurray.com/200/300" alt="Day Planner">
+                    </figure>
+                    <figure class="card">
+                        <h3>Weather Dashboard</h3>
+                        <img src="https://www.fillmurray.com/200/300" alt="Weather Dashboard">
+                    </figure>
+                    <figure class="card">
+                        <h3>Sweet Calculator</h3>
+                        <img src="https://www.fillmurray.com/200/300" alt="Sweet Calculator">
+                    </figure>
                 </article>
             </section>
+
+            <!-- Contact me section -->
             <section class="contact-me">
-                <h2 id="contact">Contact Me</h2>
+                <h2 id="contact-me-title">Contact Me</h2>
                 <ul>
                     <li>Phone</li>
                     <li>Email</li>

@@ -7,6 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 header{
     width: 100%;
@@ -20,6 +21,15 @@ header{
 main{
     display: flex;
     flex-wrap: wrap;
+}
+
+.my-photo-container{
+    display: flex;
+    max-width: 20%;
+}
+#my-photo-image{
+    max-width: 100%;
+    height: auto;
 }
 
 nav ul{
@@ -83,4 +93,32 @@ h2{
     flex-wrap: wrap;
     padding: 10px;
     background-color: lightcyan;
+}
+
+.my-work{
+    /* flex-wrap: nowrap; */
+    background-color: lightpink;
+}
+
+#my-work-title{
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#my-work-images{
+    flex-wrap: wrap;
+}
+
+.card{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
 }
