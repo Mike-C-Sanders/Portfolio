@@ -131,7 +131,11 @@ h2{
 /* Article ID containing the images */
 #my-work-images{
     flex-wrap: wrap;
+}
 
+.other-projects{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -162,13 +166,19 @@ h2{
 }
 
 /* First body of work is the largest of the group and fixed. */
-#first-project{
-    /* position: relative; */
-    justify-self: center;
-    width: 150%;
+.first-project{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .contact-me ul{
     display: flex;
     justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
