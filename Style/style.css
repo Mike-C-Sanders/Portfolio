@@ -120,8 +120,8 @@ h2{
     display: flex;
     justify-content: space-between;
     /* flex: 5; */
-
 }
+
 
 #my-work-title{
     width: 10%;
@@ -133,11 +133,14 @@ h2{
     flex-wrap: wrap;
 }
 
+/* The other projects class is for all other projects not including the first div project which will be a larger image than another. */
 .other-projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Each card has a title, image, link to the project/site, and a caption */
 .card{
     display: flex;
     border-style: solid;
@@ -165,17 +168,25 @@ h2{
     max-height: 100%;
 }
 
-/* First body of work is the largest of the group and fixed. */
+/* The first image or project is going to be larger than the others and will be contained in it's own div. */
 .first-project{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
+.contact-me{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 .contact-me ul{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
 
 footer{
     display: flex;
