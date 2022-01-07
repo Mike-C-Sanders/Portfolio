@@ -21,13 +21,13 @@ header{
     flex-wrap: wrap;
 }
 
-/* Main section of the page where about me, work and contact sections are located */
+/** Main section of the page where about me, work and contact sections are located */
 main{
     display: flex;
     flex-wrap: wrap;
 }
 
-/* My photo figure container */
+/** My photo figure container */
 .my-photo-container{
     display: flex;
     max-width: 10%;
@@ -68,7 +68,7 @@ h2{
     font-size: x-large;
     padding: 1%;
 }
-/* Subtitle section */
+/** Subtitle section */
 .sub-title{
     background: repeating-linear-gradient(
         45deg,
@@ -89,7 +89,7 @@ h2{
     padding: 5px;
 }
 
-/* About me section */
+/** About me section */
 .about-me{
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -108,7 +108,7 @@ h2{
     background-color: lightcyan;
 }
 
-/* Section is for my work tags, classes and ids. */
+/** Section is for my work tags, classes and ids. */
 .my-work{
     /* flex-wrap: nowrap; */
     background-color: lightpink;
@@ -119,7 +119,6 @@ h2{
 .my-work article{
     display: flex;
     justify-content: space-between;
-    /* flex: 5; */
 }
 
 
@@ -140,7 +139,7 @@ h2{
     justify-content: center;
 }
 
-/* Each card has a title, image, link to the project/site, and a caption */
+/** Each card has a title, image, link to the project/site, and a caption */
 .card{
     display: flex;
     border-style: solid;
@@ -174,16 +173,19 @@ h2{
     justify-content: center;
     width: 100%;
 }
-
+/* *Contact Me section. Includes a title and contact information in a ul. */
 .contact-me{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
+/* Phone email and github contact information */
 .contact-me ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    width:100%;
+    padding:50px;
 }
 
 
