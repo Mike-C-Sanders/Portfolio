@@ -173,6 +173,11 @@ h2{
     justify-content: center;
     width: 100%;
 }
+
+/** This makes the first project image larger than the others */
+.first-project figure{
+    flex: .5 .5 400px;
+}
 /* *Contact Me section. Includes a title and contact information in a ul. */
 .contact-me{
     display: flex;
