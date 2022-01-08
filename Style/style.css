@@ -1,13 +1,18 @@
 :root{
-    --dark: #0323A8;
+    --base-background: #0B0C10;
+    --section-color: #1F2833;
+    --head-background: gray;
+    --light-blue: #66FCF1;
     --large-font: large;
-    --light-green: #90EE90;
+    --dark-blue: #45A29E;
 }
 /* Primary container for page */
 body{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background: var(--base-background);
+    color: aliceblue;
 }
 /* contains a photo of me, a title and  nav links*/
 header{
@@ -15,8 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: grey;
-    color: aliceblue;
+    background-color: var(--head-background);
     padding: 2%;
     flex-wrap: wrap;
 }
@@ -117,6 +121,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background: var(--section-color);
 }
 
 /* H2 title defaults */
@@ -126,25 +131,30 @@ h2{
 }
 /** Subtitle section */
 .sub-title{
-    background: repeating-linear-gradient(
+    /* background: repeating-linear-gradient(
         45deg,
         #606dbc,
         #606dbc 10px,
         #465298 10px,
         #465298 20px
-    );
+    ); */
     width: 100%;
     color: white;
     padding: 30px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #sub-title-heading{
     font-size: var(--large-font);
-    background: var(--light-green);
     padding: 5px;
 }
 
+/** Lightsaber section container */
+.lightsaber-section{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
 /** About me section */
 .about-me{
     flex-wrap: nowrap;
@@ -156,18 +166,18 @@ h2{
 
 #about-me-title{
     padding: 10px;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 #about-me-text{
     flex-wrap: wrap;
     padding: 10px;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 
 /** Section is for my work tags, classes and ids. */
 .my-work{
     /* flex-wrap: nowrap; */
-    background-color: lightpink;
+    /* background-color: lightpink; */
     padding: 10px;
     
 }
@@ -208,7 +218,7 @@ h2{
 }
 
 .card h3{
-    background-color: lightyellow;
+    background-color: var(--head-background);
     width: 100%;
 }
 
