@@ -20,6 +20,13 @@ header{
     padding: 2%;
     flex-wrap: wrap;
 }
+/* Fun Lightsaber */
+
+.lightsaber{
+    position: relative;
+}
+
+
 
 /** Main section of the page where about me, work and contact sections are located */
 main{
