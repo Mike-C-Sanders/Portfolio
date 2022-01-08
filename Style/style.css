@@ -6,6 +6,11 @@
     --large-font: large;
     --dark-blue: #45A29E;
 }
+
+/* Enforce smooth scrolling for the whole site */
+html{
+    scroll-behavior: smooth;
+}
 /* Primary container for page */
 body{
     display: flex;
@@ -14,6 +19,8 @@ body{
     background: var(--base-background);
     color: aliceblue;
 }
+
+/** Header */
 /* contains a photo of me, a title and  nav links*/
 header{
     width: 100%;
@@ -24,12 +31,79 @@ header{
     padding: 2%;
     flex-wrap: wrap;
 }
-/* Fun Lightsaber */
+
+/** Main section of the page where about me, work and contact sections are located */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/** My photo figure container */
+.my-photo-container{
+    display: flex;
+    max-width: 10%;
+}
+
+/* My photo the image */
+#my-photo-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation list for page sections and my resume */
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 300px;
+    padding: 1%;
+}
+
+nav a{
+    color: inherit;
+}
+
+nav a:hover {
+    color: var(--light-blue);
+}
+
+/* Section defaults */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--section-color);
+}
+
+/* H2 title defaults */
+h2{
+    font-size: 35px;
+    padding: 1%;
+}
+/** Subtitle section */
+.sub-title{
+    width: 100%;
+    color: white;
+    padding: 30px;
+    justify-content: center;
+}
+
+#sub-title-heading{
+    font-size: var(--large-font);
+    padding: 5px;
+}
+
+/** Lightsaber section container */
+.lightsaber-section{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .lightsaber{
     position: relative;
     color: #fff;
-    padding-right: 100px;
+    padding-right: 270px;
 }
 
 /* removes the checkbox styling and we only see the hilt of the lightsaber */
@@ -71,8 +145,8 @@ header{
     );
     width:0px;
     height: 10px;
-    left: 50px;
-    bottom:15px;
+    left: 45px;
+    bottom:5px;
     filter: blur(2px);
 }
 
@@ -81,80 +155,7 @@ header{
     width: 250px;
 }
 
-/** Main section of the page where about me, work and contact sections are located */
-main{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/** My photo figure container */
-.my-photo-container{
-    display: flex;
-    max-width: 10%;
-}
-
-/* My photo the image */
-#my-photo-image{
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* Navigation list for page sections and my resume */
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 300px;
-    padding: 1%;
-}
-
-nav a{
-    color: inherit;
-}
-
-nav a:hover {
-    color: var(--dark);
-}
-
-/* Section defaults */
-section{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: var(--section-color);
-}
-
-/* H2 title defaults */
-h2{
-    font-size: x-large;
-    padding: 1%;
-}
-/** Subtitle section */
-.sub-title{
-    /* background: repeating-linear-gradient(
-        45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
-    ); */
-    width: 100%;
-    color: white;
-    padding: 30px;
-    justify-content: center;
-}
-
-#sub-title-heading{
-    font-size: var(--large-font);
-    padding: 5px;
-}
-
-/** Lightsaber section container */
-.lightsaber-section{
-    display:flex;
-    justify-content: center;
-    width: 100%;
-}
 /** About me section */
 .about-me{
     flex-wrap: nowrap;
@@ -172,6 +173,10 @@ h2{
     flex-wrap: wrap;
     padding: 10px;
     /* background-color: lightcyan; */
+}
+
+#about-me-text p{
+    padding:10px;
 }
 
 /** Section is for my work tags, classes and ids. */
@@ -258,8 +263,9 @@ h2{
     width:100%;
     padding:50px;
 }
-
-
+.contact-me a{
+    color: inherit;
+}
 
 footer{
     display: flex;
