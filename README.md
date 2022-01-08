@@ -5,7 +5,7 @@ My personal portfolio. At this time there are placeholder projects as this site 
 
 To access the published site follow this GitHub pages link: <https://mike-c-sanders.github.io/Portfolio/>
 
-<![portfolio-screenshot](https://user-images.githubusercontent.com/71601403/148632154-7fade9f8-9665-436a-8190-00ac955183ab.png)>
+![portfolio-screenshot](https://user-images.githubusercontent.com/71601403/148632154-7fade9f8-9665-436a-8190-00ac955183ab.png)
 
 ## Table of Contents
 
