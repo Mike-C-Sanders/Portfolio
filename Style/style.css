@@ -24,9 +24,58 @@ header{
 
 .lightsaber{
     position: relative;
+    color: #fff;
+    padding-right: 100px;
 }
 
+/* removes the checkbox styling and we only see the hilt of the lightsaber */
+.lightsaber input[type="checkbox"]{
+    opacity: 0;
+}
 
+/* The lightsaber hilt */
+.lightsaber label{
+    display: block;
+    position:absolute;
+    height: 15px;
+    width: 50px;
+    background: linear-gradient(
+        to right,
+        rgba(226, 226, 226, 1) 0%,
+        rgba(219, 219, 219, 1) 50%,
+        rgba(209, 209, 209, 1) 51%,
+        rgba(254, 254, 254, 1) 100%
+    );
+    border-left: solid 4px gray;
+    border-right: solid 4px gray;
+    border-radius: 5px;
+}
+
+/* Lightsaber blade */
+.lightsaber .plasma {
+    position:absolute;
+    transition: 0.3s;
+    border-radius: 12px 12px 0 0;
+    background: rgb(135, 220, 90);
+    background: linear-gradient(
+    to left, 
+    rgb(135, 220, 90) 0%, 
+    rgb(254, 254, 254) 30%, 
+    rgb(254, 254, 254) 50%, 
+    rgb(254, 254, 254) 70%, 
+    rgb(135, 220, 90) 100%
+    );
+    width:0px;
+    height: 10px;
+    left: 50px;
+    bottom:15px;
+    filter: blur(2px);
+}
+
+/* Open and close the lightsaber */
+.lightsaber input[type="checkbox"]:checked ~ .plasma{
+    width: 250px;
+}
 
 /** Main section of the page where about me, work and contact sections are located */
 main{
@@ -87,7 +136,7 @@ h2{
     width: 100%;
     color: white;
     padding: 30px;
-    justify-content: right;
+    justify-content: space-evenly;
 }
 
 #sub-title-heading{
