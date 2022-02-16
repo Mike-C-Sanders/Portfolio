@@ -15,6 +15,8 @@ README.md - primary Readme file
 index.html - primary html file
 
 (Folders)
+    *PDFs
+        Mike Sanders Resume.pdf
 
     * Style
     
@@ -26,17 +28,17 @@ index.html - primary html file
 
         1. myphoto.jpeg
         
-        2. Cool-Calculator.jpeg
+        2. Code Quiz.png
 
-        3. DayPlanner.jpeg
+        3. DayScheduler.jpeg
 
-        4. Ecommerce.jpg
+        4. MovieTracker.jpg
 
-        5. Password-Generator.jpg
+        5. portfolio-screenshot.jpg
 
-        6. Weather-Dashboard.jpg
 
 ```
+
 ## Highlight Functionality
 
     * Smooth scrolling when clicking on navigation list found in heading
@@ -47,4 +49,4 @@ index.html - primary html file
 
     * Lightsaber that opens and closes
 
-    * Contact information at the bottom of page is functional: phone, email, github link.
+    * Contact information at the bottom of page is functional: LinkedIn, email, github link.
