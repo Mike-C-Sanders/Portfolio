@@ -55,12 +55,13 @@ main{
 nav ul{
     display: flex;
     justify-content: space-evenly;
-    min-width: 300px;
+    min-width: 400px;
     padding: 1%;
 }
 
 nav a{
     color: inherit;
+    font-size: 20px;
 }
 
 nav a:hover {
