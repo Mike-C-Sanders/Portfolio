@@ -224,7 +224,7 @@ h2{
 }
 
 .card h3{
-    background-color: var(--head-background);
+    /* background-color: var(--head-background); */
     width: 100%;
 }
 
