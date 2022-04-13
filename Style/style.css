@@ -38,6 +38,10 @@ main{
     flex-wrap: wrap;
 }
 
+a:link{
+    color: aliceblue;
+}
+
 /** My photo figure container */
 .my-photo-container{
     display: flex;
@@ -272,4 +276,8 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+git-link:hover {
+    color: var(--light-blue);
 }
